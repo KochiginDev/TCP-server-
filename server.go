@@ -16,7 +16,7 @@ func Connection(conn net.Conn) {
 }
 
 func main() {
-	fd, err := net.Listen("tcp", "8080")
+	fd, err := net.Listen("tcp", ":8080")
 	if err != nil {
 		fmt.Println(err)
 		return
